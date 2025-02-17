@@ -54,18 +54,9 @@ void iterativepreorder(Node* root)
     }
 }
 
-void inorder(Node* root)
-{
-    if(root==NULL) return;
-    inorder(root->left);
-    cout<<root->data<<" ";
-    inorder(root->right);
-}
-
 int main()
 {
     vector<int> a={1,2,3,4,5,6,7};
     Node* root=sortedArrayToBST(a);
-    iterativepreorder(root); cout<<endl;
-    inorder(root);
+    iterativepreorder(root);
 }
